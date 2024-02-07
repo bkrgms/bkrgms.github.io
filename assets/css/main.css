@@ -1116,13 +1116,13 @@ input, select, textarea {
 		-webkit-transform: scale(1.0);
 		-ms-transform: scale(1.0);
 		transform: scale(1.0);
-		-webkit-backface-visibility: hidden;
 		position: fixed;
 		top: 0;
 		left: 0;
 		width: 100%;
 		height: 100vh;
 		z-index: 1;
+		
 	}
 
 		#bg:before, #bg:after {
@@ -1144,9 +1144,10 @@ input, select, textarea {
 			-webkit-transition-delay: 0.75s;
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
-			background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(255, 98, 1, 0.5)), url("../../images/overlay.png");
+			background-color: #d47171;
+			background-image: linear-gradient(61deg, #d47171 0%, #827d9a 100%);
 			background-size: auto,
- 256px 256px;
+ 			256px 256px;
 			background-position: center,
  center;
 			background-repeat: no-repeat,
@@ -1155,6 +1156,7 @@ input, select, textarea {
 		}
 
 		#bg:after {
+			
 			-moz-transform: scale(1.125);
 			-webkit-transform: scale(1.125);
 			-ms-transform: scale(1.125);
@@ -1239,7 +1241,6 @@ input, select, textarea {
 			}
 
 		}
-
 /* Header */
 
 	#header {
@@ -1255,14 +1256,6 @@ input, select, textarea {
 		-webkit-align-items: center;
 		-ms-align-items: center;
 		align-items: center;
-		-moz-transition: -moz-transform 0.325s ease-in-out, -moz-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
-		-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
-		-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
-		transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
-		background-image: -moz-radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 55%);
-		background-image: -webkit-radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 55%);
-		background-image: -ms-radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 55%);
-		background-image: radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 55%);
 		max-width: 100%;
 		text-align: center;
 	}
