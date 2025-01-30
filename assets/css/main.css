@@ -31,6 +31,7 @@ footer, header, hgroup, menu, nav, section {
 
 body {
 	line-height: 1;
+	
 }
 
 ol, ul {
@@ -95,7 +96,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #1b1f22;
+		background: #0091ff;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -1144,7 +1145,7 @@ input, select, textarea {
 			-webkit-transition-delay: 0.75s;
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
-			background-color: #d47171;
+			background-color: #000000;
 			background-image: linear-gradient(61deg, #d47171 0%, #827d9a 100%);
 			background-size: auto,
  			256px 256px;
@@ -1367,11 +1368,11 @@ input, select, textarea {
 				}
 
 					#header nav ul li a:hover {
-						background-color: rgba(255, 255, 255, 0.075);
+						background-color: rgba(228, 19, 19, 0.075);
 					}
 
 					#header nav ul li a:active {
-						background-color: rgba(255, 255, 255, 0.175);
+						background-color: rgba(233, 23, 23, 0.175);
 					}
 
 		#header nav.use-middle:after {
