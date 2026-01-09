@@ -1,60 +1,627 @@
 <!DOCTYPE HTML>
-<!--
-	Dimension by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Bekir Gumus</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<html lang="tr">
+<head>
+    <title>Bekir Gümüş | Software Engineer & AI Developer</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5, viewport-fit=cover" />
+    <meta name="description" content="Bekir Gümüş - Software Engineer, iOS App & AI Developer. Profesyonel portfolyo ve projeler." />
+    <meta name="theme-color" content="#000000" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/portfolio.css" />
+</head>
+<body>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
-			
-				<!-- Header -->
-					<header id="header">
-						<img id="bkr" src="images/images.jpg">
-						<div class="content">
-							<div class="inner">
-								<h1>BEKİR GÜMÜŞ</h1>
-								
-								<h3>Software Engineering<br>Android developer</h3>
-								<p><a href="https://maps.app.goo.gl/EBSun5ndVX586otY9">Istanbul - Turkey</a></p>
-							</div>
-						</div>
-						<nav>
-							<ul>
-								
-								<li><a href="https://www.linkedin.com/in/bekir-gumus/">LinkedIn</a></li>
-								<li><a href="https://github.com/bkrgms">Github</a></li>
-								<li><a href="https://www.instagram.com/bekir.dll/">Instagram</a></li>
-								
-								
-								<!--<li><a href="#elements">Elements</a></li>-->
-							</ul>
-						</nav>
-					</header>
-				
-				<!-- Footer -->
-					
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="profile-image">
+                <img src="images/images.jpg" alt="Bekir Gümüş" />
+                <div class="status-indicator"></div>
+            </div>
+            <h1 class="name">Bekir Gümüş</h1>
+            <p class="role">Software Engineer</p>
+            <p class="specialization">iOS & AI Developer</p>
+        </div>
 
-			</div>
+        <nav class="sidebar-nav">
+            <a href="#about" class="nav-item active" data-section="about">
+                <i class="fas fa-user"></i>
+                <span>Hakkımda</span>
+            </a>
+            <a href="#projects" class="nav-item" data-section="projects">
+                <i class="fas fa-rocket"></i>
+                <span>Projeler</span>
+            </a>
+            <a href="#skills" class="nav-item" data-section="skills">
+                <i class="fas fa-code"></i>
+                <span>Yetenekler</span>
+            </a>
+            <a href="#contact" class="nav-item" data-section="contact">
+                <i class="fas fa-paper-plane"></i>
+                <span>İletişim</span>
+            </a>
+        </nav>
 
-		<!-- BG -->
-			<div id="bg"></div>
+        <div class="sidebar-footer">
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/bekir-gumus/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/bkrgms" target="_blank" rel="noopener noreferrer" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.instagram.com/bekirgmuss/" target="_blank" rel="noopener noreferrer" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+            <div class="location">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>İstanbul, Turkey</span>
+            </div>
+        </div>
+    </aside>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+    <!-- Mobile Header -->
+    <header class="mobile-header">
+        <button class="menu-toggle" id="menuToggle">
+            <i class="fas fa-bars"></i>
+        </button>
+        <span class="mobile-title">Bekir Gümüş</span>
+    </header>
 
-	</body>
+    <!-- Main Content -->
+    <main class="main-content">
+        
+        <!-- About Section -->
+        <section id="about" class="section active">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="title-icon"><i class="fas fa-user"></i></span>
+                    Hakkımda
+                </h2>
+                <div class="title-line"></div>
+            </div>
+
+            <div class="about-content">
+                <div class="about-intro">
+                    <div class="intro-text">
+                        <p class="greeting">Merhaba! 👋</p>
+                        <h3>Ben <span class="highlight">Bekir Gümüş</span></h3>
+                        <p class="tagline">Tutkulu bir yazılım mühendisi, iOS uygulama ve yapay zeka geliştiricisi</p>
+                    </div>
+                </div>
+
+                <div class="about-description">
+                    <p>İstanbul merkezli bir yazılım mühendisi olarak, kullanıcı odaklı mobil uygulamalar ve akıllı AI çözümleri geliştiriyorum. Teknolojinin gücünü kullanarak insanların hayatını kolaylaştıran ürünler yaratmak benim için bir tutku.</p>
+                    
+                    <p>Swift, SwiftUI ve modern iOS teknolojileri ile native mobil uygulamalar geliştirirken, aynı zamanda Python ve yapay zeka framework'leri ile akıllı sistemler tasarlıyorum. Her projede en iyi pratikleri uygulayarak temiz, sürdürülebilir ve ölçeklenebilir kod yazmaya özen gösteriyorum.</p>
+                    
+                    <p>Açık kaynak topluluğuna katkıda bulunmayı, yeni teknolojileri keşfetmeyi ve bilgimi paylaşmayı seviyorum. Sürekli öğrenme ve kendimi geliştirme konusundaki kararlılığım, beni her gün daha iyi bir geliştirici yapıyor.</p>
+                </div>
+
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">3+</span>
+                        <span class="stat-label">Yıl Deneyim</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">15+</span>
+                        <span class="stat-label">Tamamlanan Proje</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">5+</span>
+                        <span class="stat-label">Mutlu Müşteri</span>
+                    </div>
+                </div>
+
+                <div class="about-cta">
+                    <a href="#contact" class="btn btn-primary" data-nav="contact">
+                        <i class="fas fa-paper-plane"></i>
+                        İletişime Geç
+                    </a>
+                    <a href="#projects" class="btn btn-secondary" data-nav="projects">
+                        <i class="fas fa-folder-open"></i>
+                        Projeleri Gör
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="title-icon"><i class="fas fa-rocket"></i></span>
+                    Projeler
+                </h2>
+                <div class="title-line"></div>
+            </div>
+
+            <p class="section-intro">Üzerinde çalıştığım ve tamamladığım öne çıkan projeler. Her biri farklı teknolojiler ve problem çözme yaklaşımları içeriyor.</p>
+
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/bkrgms/GreenerWay" class="project-link" title="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">GreenerWay</h3>
+                    <p class="project-description">Bu proje, karbon emisyon takibi ve sürdürülebilir ulaşım konularında bir bitirme projesi olarak geliştirilmektedir.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">SwiftUI</span>
+                        <span class="tech-tag">Firebase Auth</span>
+                        <span class="tech-tag">MapKit</span>
+                        <span class="tech-tag">OpenWeather API</span>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/bkrgms/book_system" class="project-link" title="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Book System</h3>
+                    <p class="project-description">Kullanıcıların istedikleri kitapları bulabilmesini sağlayan arama servisi ayrıca istediği kitaba yorum ve yıldız verebildiği bir sistemdir. Sitenin admini ise girişini yaptıktan sonra kitapları düzenleyebilir, silebilir veya kitap ekleyebilir.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">Vue.js</span>
+                        <span class="tech-tag">SOAP</span>
+                        <span class="tech-tag">gRPC</span>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/bkrgms/Mood-Music-AI" class="project-link" title="GitHub"><i class="fab fa-github"></i></a>
+                            
+                        </div>
+                    </div>
+                    <h3 class="project-title">Mood Music AI</h3>
+                    <p class="project-description">Yapay zekâ ve RAG mimarisi kullanarak kullanıcının duygu durumunu anlayan ve her etkileşimde daha çeşitli, kişiselleştirilmiş Türkçe müzik önerileri sunan akıllı bir mobil müzik asistanı.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Machine Learning</span>
+                        <span class="tech-tag">TensorFlow</span>
+                        <span class="tech-tag">HuggingFace</span>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-desktop"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/bkrgms/Housing-price-prediction-app" class="project-link" title="GitHub"><i class="fab fa-github"></i></a>
+                            
+                        </div>
+                    </div>
+                    <h3 class="project-title">House Price Prediction App</h3>
+                    <p class="project-description">Makine öğrenmesi modelleri kullanarak konut özelliklerine göre fiyat tahmini yapan, Streamlit tabanlı bir web uygulamasıdır.
+Veri analizi, model eğitimi ve etkileşimli arayüzü tek bir uçtan uca senaryoda birleştirerek kullanıcıya hızlı ve anlaşılır tahminler sunar.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Pandas</span>
+                        <span class="tech-tag">Scikit Learn</span>
+                        <span class="tech-tag">Pandas</span>
+                    </div>
+                </article>
+            </div>
+
+            <div class="projects-cta">
+                <a href="https://github.com/bkrgms" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                    <i class="fab fa-github"></i>
+                    Tüm Projeleri GitHub'da Gör
+                </a>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="title-icon"><i class="fas fa-code"></i></span>
+                    Yetenekler
+                </h2>
+                <div class="title-line"></div>
+            </div>
+
+            <p class="section-intro">Profesyonel kariyerim boyunca edindiğim teknik beceriler ve uzmanlık alanlarım.</p>
+
+            <div class="skills-container">
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-laptop-code"></i>
+                        <h3>Programlama Dilleri</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Swift</span>
+                                <span class="skill-level">Expert</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 95%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Python</span>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">JavaScript</span>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">SQL</span>
+                                <span class="skill-level">Intermediate</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 75%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h3>Mobil Geliştirme</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">SwiftUI</span>
+                        <span class="skill-tag">UIKit</span>
+                        <span class="skill-tag">Core Data</span>
+                        <span class="skill-tag">Combine</span>
+                        <span class="skill-tag">Firebase</span>
+                        <span class="skill-tag">CloudKit</span>
+                        <span class="skill-tag">RESTful APIs</span>
+                        <span class="skill-tag">Push Notifications</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-brain"></i>
+                        <h3>Yapay Zeka & ML</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">OpenAI API</span>
+                        <span class="skill-tag">TensorFlow</span>
+                        <span class="skill-tag">PyTorch</span>
+                        <span class="skill-tag">NLP</span>
+                        <span class="skill-tag">Computer Vision</span>
+                        <span class="skill-tag">LangChain</span>
+                        <span class="skill-tag">Hugging Face</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-tools"></i>
+                        <h3>Araçlar & DevOps</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">GitHub Actions</span>
+                        <span class="skill-tag">Xcode</span>
+                        <span class="skill-tag">VS Code</span>
+                        <span class="skill-tag">Postman</span>
+                        <span class="skill-tag">Figma</span>
+                        <span class="skill-tag">Jira</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="title-icon"><i class="fas fa-paper-plane"></i></span>
+                    İletişim
+                </h2>
+                <div class="title-line"></div>
+            </div>
+
+            <p class="section-intro">Bir proje fikriniz mi var? Birlikte çalışmak veya sadece merhaba demek isterseniz, bana ulaşın!</p>
+
+            <div class="contact-container">
+                <div class="contact-info-cards">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h4>Konum</h4>
+                        <p>İstanbul, Turkey</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </div>
+                        <h4>LinkedIn</h4>
+                        <a href="https://www.linkedin.com/in/bekir-gumus/" target="_blank" rel="noopener noreferrer">bekir-gumus</a>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <h4>GitHub</h4>
+                        <a href="https://github.com/bkrgms" target="_blank" rel="noopener noreferrer">bkrgms</a>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm" action="https://formspree.io/f/xreezeeg" method="POST">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">İsim</label>
+                            <input type="text" id="name" name="name" required placeholder="Adınız Soyadınız">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required placeholder="ornek@email.com">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Konu</label>
+                        <input type="text" id="subject" name="_subject" required placeholder="Mesajınızın konusu">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mesaj</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Mesajınızı buraya yazın..."></textarea>
+                    </div>
+                    <input type="hidden" name="_template" value="table">
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <i class="fas fa-paper-plane"></i>
+                        Mesaj Gönder
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <p>&copy; 2026 Bekir Gümüş. Tüm hakları saklıdır.</p>
+                <div class="footer-links">
+                    <a href="https://www.linkedin.com/in/bekir-gumus/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/bkrgms" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                    <a href="https://www.instagram.com/bekirgmuss/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Overlay for mobile -->
+    <div class="overlay" id="overlay"></div>
+
+    <script>
+        // DOM Elements
+        const sidebar = document.getElementById('sidebar');
+        const menuToggle = document.getElementById('menuToggle');
+        const menuIcon = menuToggle.querySelector('i');
+        const overlay = document.getElementById('overlay');
+        const navItems = document.querySelectorAll('.nav-item');
+        const sections = document.querySelectorAll('.section');
+        const btnsWithNav = document.querySelectorAll('[data-nav]');
+        const mainContent = document.querySelector('.main-content');
+
+        // Mobile menu state
+        let isMenuOpen = false;
+
+        // Toggle mobile menu
+        function toggleMenu() {
+            isMenuOpen = !isMenuOpen;
+            sidebar.classList.toggle('active', isMenuOpen);
+            overlay.classList.toggle('active', isMenuOpen);
+            
+            // Toggle icon
+            menuIcon.classList.toggle('fa-bars', !isMenuOpen);
+            menuIcon.classList.toggle('fa-times', isMenuOpen);
+            
+            // Prevent body scroll when menu is open
+            document.body.style.overflow = isMenuOpen ? 'hidden' : '';
+        }
+
+        function closeMenu() {
+            if (isMenuOpen) {
+                isMenuOpen = false;
+                sidebar.classList.remove('active');
+                overlay.classList.remove('active');
+                menuIcon.classList.add('fa-bars');
+                menuIcon.classList.remove('fa-times');
+                document.body.style.overflow = '';
+            }
+        }
+
+        menuToggle.addEventListener('click', toggleMenu);
+        overlay.addEventListener('click', closeMenu);
+
+        // Close menu on escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeMenu();
+        });
+
+        // Swipe to close menu (touch devices)
+        let touchStartX = 0;
+        let touchEndX = 0;
+
+        sidebar.addEventListener('touchstart', (e) => {
+            touchStartX = e.changedTouches[0].screenX;
+        }, { passive: true });
+
+        sidebar.addEventListener('touchend', (e) => {
+            touchEndX = e.changedTouches[0].screenX;
+            if (touchStartX - touchEndX > 50) {
+                closeMenu(); // Swipe left to close
+            }
+        }, { passive: true });
+
+        // Navigation handling
+        function showSection(sectionId) {
+            // Hide all sections
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+
+            // Show target section
+            const targetSection = document.getElementById(sectionId);
+            if (targetSection) {
+                targetSection.classList.add('active');
+            }
+
+            // Update nav items
+            navItems.forEach(item => {
+                item.classList.remove('active');
+                if (item.getAttribute('data-section') === sectionId) {
+                    item.classList.add('active');
+                }
+            });
+
+            // Close mobile menu
+            closeMenu();
+
+            // Scroll to top of main content smoothly
+            mainContent.scrollTo({ top: 0, behavior: 'smooth' });
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Nav item click handlers
+        navItems.forEach(item => {
+            item.addEventListener('click', (e) => {
+                e.preventDefault();
+                const sectionId = item.getAttribute('data-section');
+                showSection(sectionId);
+                history.pushState(null, null, `#${sectionId}`);
+            });
+        });
+
+        // Buttons with data-nav attribute
+        btnsWithNav.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                const sectionId = btn.getAttribute('data-nav');
+                showSection(sectionId);
+                history.pushState(null, null, `#${sectionId}`);
+            });
+        });
+
+        // Handle browser back/forward
+        window.addEventListener('popstate', () => {
+            const hash = window.location.hash.slice(1) || 'about';
+            showSection(hash);
+        });
+
+        // Handle window resize - close menu if switching to desktop
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 768) {
+                closeMenu();
+            }
+        });
+
+        // Initial load - show about section or hash
+        document.addEventListener('DOMContentLoaded', () => {
+            const hash = window.location.hash.slice(1) || 'about';
+            showSection(hash);
+            
+            // Add smooth scroll behavior to main content
+            mainContent.style.scrollBehavior = 'smooth';
+        });
+
+        // Form submission with Formspree
+        const contactForm = document.getElementById('contactForm');
+        contactForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const submitBtn = contactForm.querySelector('button[type="submit"]');
+            const originalText = submitBtn.innerHTML;
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Gönderiliyor...';
+            submitBtn.disabled = true;
+            
+            try {
+                const formData = new FormData(contactForm);
+                const response = await fetch(contactForm.action, {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+                
+                if (response.ok) {
+                    submitBtn.innerHTML = '<i class="fas fa-check"></i> Gönderildi!';
+                    submitBtn.style.background = 'linear-gradient(135deg, #10b981 0%, #059669 100%)';
+                    contactForm.reset();
+                    
+                    setTimeout(() => {
+                        submitBtn.innerHTML = originalText;
+                        submitBtn.style.background = '';
+                        submitBtn.disabled = false;
+                    }, 3000);
+                } else {
+                    throw new Error('Form gönderilemedi');
+                }
+            } catch (error) {
+                submitBtn.innerHTML = '<i class="fas fa-times"></i> Hata!';
+                submitBtn.style.background = 'linear-gradient(135deg, #ef4444 0%, #dc2626 100%)';
+                
+                setTimeout(() => {
+                    submitBtn.innerHTML = originalText;
+                    submitBtn.style.background = '';
+                    submitBtn.disabled = false;
+                }, 3000);
+            }
+        });
+
+        // Intersection Observer for animations (performance optimized)
+        if ('IntersectionObserver' in window) {
+            const animateOnScroll = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            // Animate skill bars when visible
+            document.querySelectorAll('.skill-progress').forEach(bar => {
+                const width = bar.style.width;
+                bar.style.width = '0';
+                
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            setTimeout(() => {
+                                bar.style.width = width;
+                            }, 200);
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.5 });
+                
+                observer.observe(bar);
+            });
+        }
+    </script>
+</body>
 </html>

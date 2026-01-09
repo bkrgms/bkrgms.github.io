@@ -398,4 +398,53 @@
 						$main._show(location.hash.substr(1), true);
 					});
 
+	// Sidebar functionality
+		var $sidebar = $('#sidebar'),
+			$sidebarNav = $('.sidebar-nav a'),
+			$mobileToggle = null;
+
+		// Mobile menu toggle
+		if ($('body').hasClass('sidebar-layout')) {
+			// Create mobile toggle button
+			$mobileToggle = $('<div class="mobile-menu-toggle"><span class="icon solid fa-bars"></span></div>');
+			$body.append($mobileToggle);
+
+			// Toggle sidebar on mobile
+			$mobileToggle.on('click', function(e) {
+				e.preventDefault();
+				e.stopPropagation();
+				$sidebar.toggleClass('active');
+			});
+
+			// Close sidebar when clicking outside on mobile
+			$body.on('click', function(e) {
+				if ($sidebar.hasClass('active') && 
+					!$(e.target).closest('#sidebar').length && 
+					!$(e.target).closest('.mobile-menu-toggle').length) {
+					$sidebar.removeClass('active');
+				}
+			});
+
+			// Update active state on nav links
+			$sidebarNav.on('click', function() {
+				$sidebarNav.removeClass('active');
+				$(this).addClass('active');
+				
+				// Close sidebar on mobile after clicking
+				if ($window.width() <= 980) {
+					setTimeout(function() {
+						$sidebar.removeClass('active');
+					}, 300);
+				}
+			});
+
+			// Show first article by default
+			if (location.hash == '' || location.hash == '#') {
+				$window.on('load', function() {
+					$main._show('about', true);
+					$sidebarNav.filter('[href="#about"]').addClass('active');
+				});
+			}
+		}
+
 })(jQuery);

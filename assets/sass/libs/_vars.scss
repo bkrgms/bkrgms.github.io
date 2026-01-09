@@ -31,13 +31,13 @@
 
 // Palette.
 	$palette: (
-		bg:							#1b1f22,
+		bg:							#0a0a0a,
 		bg-alt:						#000000,
-		bg-overlay:					rgba(19,21,25,0.5),
-		fg:							#ffffff,
+		bg-overlay:					rgba(0,0,0,0.85),
+		fg:							#e8e8e8,
 		fg-bold:					#ffffff,
-		fg-light:					rgba(255,255,255,0.5),
-		border:						#ffffff,
-		border-bg:					rgba(255,255,255,0.075),
-		border-bg-alt:				rgba(255,255,255,0.175)
+		fg-light:					rgba(255,255,255,0.4),
+		border:						#404040,
+		border-bg:					rgba(64,64,64,0.15),
+		border-bg-alt:				rgba(64,64,64,0.3)
 	);
