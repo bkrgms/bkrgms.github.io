@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page not found — Lyvora</title>
+  <meta name="description" content="This page does not exist." />
+  <meta name="theme-color" content="#000000" />
+  <meta name="robots" content="noindex" />
+  <link rel="icon" href="/assets/images/logo.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['"DM Sans"', "system-ui", "sans-serif"] },
+        },
+      },
+    };
+  </script>
+</head>
+<body class="min-h-screen bg-black font-sans text-neutral-200 antialiased selection:bg-white selection:text-black">
+  <main class="mx-auto flex min-h-screen max-w-lg flex-col justify-center px-5 py-12 sm:px-6 sm:py-16">
+    <div class="rounded-2xl border border-neutral-800 bg-neutral-950 px-6 py-8 sm:px-8 sm:py-9">
+      <div class="mb-8 flex flex-col items-center text-center">
+        <a href="/" class="mb-4 block rounded-xl ring-1 ring-neutral-800 transition hover:ring-neutral-600" aria-label="Lyvora home">
+          <img src="/assets/images/logo.png" width="56" height="56" alt="" class="h-14 w-14 rounded-xl bg-black object-contain" />
+        </a>
+        <p class="text-[10px] font-semibold uppercase tracking-[0.2em] text-neutral-500">Lyvora</p>
+        <h1 class="mt-3 text-balance text-2xl font-semibold tracking-tight text-white sm:text-[1.65rem]">Page not found</h1>
+        <p class="mt-3 max-w-xs text-pretty text-sm leading-relaxed text-neutral-500">
+          That URL is not on this site. Try the home page or a link below.
+        </p>
+      </div>
+
+      <ul class="flex flex-col gap-2.5">
+        <li>
+          <a
+            href="/"
+            class="flex items-center justify-between rounded-xl border border-neutral-800 bg-black px-4 py-3 text-sm text-white transition hover:border-neutral-600 hover:bg-neutral-900"
+          >
+            <span class="font-medium">Home</span>
+            <span class="text-neutral-500" aria-hidden="true">→</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="/lyvora/privacy/"
+            class="flex items-center justify-between rounded-xl border border-neutral-800 bg-black px-4 py-3 text-sm text-white transition hover:border-neutral-600 hover:bg-neutral-900"
+          >
+            <span class="font-medium">Privacy Policy</span>
+            <span class="text-neutral-500" aria-hidden="true">→</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="/lyvora/terms/"
+            class="flex items-center justify-between rounded-xl border border-neutral-800 bg-black px-4 py-3 text-sm text-white transition hover:border-neutral-600 hover:bg-neutral-900"
+          >
+            <span class="font-medium">Terms of Use</span>
+            <span class="text-neutral-500" aria-hidden="true">→</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="/lyvora/support/"
+            class="flex items-center justify-between rounded-xl border border-neutral-800 bg-black px-4 py-3 text-sm text-white transition hover:border-neutral-600 hover:bg-neutral-900"
+          >
+            <span class="font-medium">Support</span>
+            <span class="text-neutral-500" aria-hidden="true">→</span>
+          </a>
+        </li>
+      </ul>
+
+      <p class="mt-8 text-center text-[11px] text-neutral-600">© Lyvora</p>
+    </div>
+  </main>
+</body>
+</html>
